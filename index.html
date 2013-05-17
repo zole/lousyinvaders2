@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lousy Invaders 2</title>
+  <script type="text/javascript" src="lib/crafty.js"></script>
+  <script type="text/javascript" src="lib/edges.js"></script>
+  <script type="text/javascript" src="src/components.js"></script>
+  <script type="text/javascript" src="src/game.js"></script>
+  <script type="text/javascript" src="src/launch.js"></script>
+
+  <script></script>
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-variant: small-caps;
+    max-width: 320px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  #cr-stage { 
+    margin: 0 auto;
+    cursor: crosshair;
+
+    // Disable selecting text, except in IE I guess
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  </style>
+
+  <!-- iPhone support; "width: device-width" apparently prevents 4" screens from using the whole screen height -->
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="res/touch-icon-iphone.png" />
+</head>
+<body>
+  <!--
+    CREDITS!
+
+    Design, programming, and music (c) Alex Michaud
+    http://bucketosoftware.com/
+
+    Graphics by bart, released to the public domain
+    http://opengameart.org/content/i-are-spaceship-16x16-space-sprites
+
+    Based on Crafty: http://craftyjs.com/
+
+  -->
+  <div id="cr-stage"></div>
+    
+  <h1>Lousy Invaders 2: The Lousening</h1>
+  <p id="help">
+    Put your mouse cursor where you'd like your ship to be.
+    Click to fire.
+    Lose big points for being crashed into, ya big dummy.
+  </p>
+
+</body>
+</html>
